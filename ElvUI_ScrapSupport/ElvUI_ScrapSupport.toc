@@ -6,8 +6,8 @@
 ## Version: 1.0
 ## RequiredDeps: ElvUI, Scrap
 ## DefaultState: Enabled
-## X-Curse-Project-ID:
-## X-Wago-ID:
+## X-Curse-Project-ID: 1033962
+## X-Wago-ID: nGvpQW6x
 ## IconTexture: Interface\AddOns\ElvUI_ScrapSupport\Logo
 
 init.lua
