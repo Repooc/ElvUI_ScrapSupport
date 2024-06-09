@@ -1,0 +1,13 @@
+## Interface: 100207
+## Interface-Cata: 40400
+## Interface-Classic: 11502
+## Title: |cff00FF98ElvUI|r |cffA330C9Scrap Support|r
+## Author: Repooc
+## Version: 1.0
+## RequiredDeps: ElvUI, Scrap
+## DefaultState: Enabled
+## X-Curse-Project-ID:
+## X-Wago-ID:
+## IconTexture: Interface\AddOns\ElvUI_ScrapSupport\Logo
+
+init.lua
