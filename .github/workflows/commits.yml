@@ -3,6 +3,9 @@ on:
   push:
     paths-ignore:
       - '.github/**'
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - '.pkgmeta'
     branches:
       - "**"
     tags:
