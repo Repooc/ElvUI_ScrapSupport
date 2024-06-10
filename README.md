@@ -9,7 +9,7 @@
 
 Do you want to be able to use ElvUI's bags and the addon, Scrap (Junk Seller), at the same time and have it display "SOMETHING" on the items!
 
-**Scrap Support (ElvUI Plugin)** is the solution! This ElvUI plugin allows Scrap (Junk Seller) display an icon (scrap on retail, gold coin on cata and classic) for items it has marked as junk. Take that control of your junk now and download Scrap Support (ElvUI Plugin)!
+**Scrap Support (ElvUI Plugin)** is the solution! This ElvUI plugin allows Scrap (Junk Seller) display an icon for items it has marked as junk. Take that control of your junk now and download Scrap Support (ElvUI Plugin)!
 
 ### Features:
 - **Simplified Options:** There are no options for this plugin! Set and forget...(still have to configure scrap, this plugin just allows an icon display that it says to.)
