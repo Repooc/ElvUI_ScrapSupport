@@ -1,3 +1,3 @@
-v1.1 6/9/2024
+v1.3 8/13/2024
 
-• make it so bags update live when changing Scrap toggles for icon/glow
+• bump toc

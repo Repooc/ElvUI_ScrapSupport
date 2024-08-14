@@ -3,7 +3,7 @@
 ## Interface-Classic: 11503
 ## Title: |cff00FF98ElvUI|r |cffA330C9Scrap Support|r
 ## Author: Repooc
-## Version: 1.2
+## Version: 1.3
 ## RequiredDeps: ElvUI, Scrap
 ## DefaultState: Enabled
 ## X-Curse-Project-ID: 1033962
