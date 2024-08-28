@@ -1,4 +1,4 @@
-## Interface: 100207
+## Interface: 110002
 ## Interface-Cata: 40400
 ## Interface-Classic: 11503
 ## Title: |cff00FF98ElvUI|r |cffA330C9Scrap Support|r
