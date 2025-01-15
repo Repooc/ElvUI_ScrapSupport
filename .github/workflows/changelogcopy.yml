@@ -28,7 +28,7 @@ jobs:
           repository: repooc/repoocreforged-wiki # Replace with your target repository
           ref: main
           show-progress: true
-          token: ${{ secrets.UPDATECHANGELOGS }}
+          token: ${{ secrets.UPDATE_CHANGELOGS }}
           path: ./repoocreforged-wiki # The folder where the target repo will be checked out
       # Step 3: Copy the file from source to target
       - name: Copy File to Target Repository
@@ -56,4 +56,4 @@ jobs:
           git commit -m "Update changelog file for Scrap Support on tag push: $GITHUB_REF"
           git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.UPDATECHANGELOGS }}
+          GITHUB_TOKEN: ${{ secrets.UPDATE_CHANGELOGS }}
