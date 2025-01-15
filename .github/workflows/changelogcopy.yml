@@ -28,7 +28,11 @@ jobs:
           repository: repooc/repoocreforged-wiki # Replace with your target repository
           token: ${{ secrets.GITHUB_TOKEN }}
           path: ./repoocreforged-wiki # The folder where the target repo will be checked out
-
+      # Step 3: Ensure the target branch is main
+      - name: Checkout main branch in target repository
+        run: |
+            cd repoocreforged-wiki
+            git checkout main
       # Step 3: Copy the file from source to target
       - name: Copy File to Target Repository
         run: |
