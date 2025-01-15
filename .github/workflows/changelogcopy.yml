@@ -1,0 +1,57 @@
+name: Copy Changelog to Website on Tag Push
+
+on:
+#   push:
+#     tags:
+#       - '*' # Trigger on any tag push
+  push:
+    paths:
+      - 'CHANGELOG.md'
+    branches:
+        - "main"
+    tags:
+        - "!**"
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the source repository
+      - name: Checkout Source Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Checkout the target repository
+      - name: Checkout Target Repository
+        uses: actions/checkout@v4
+        with:
+          repository: repooc/repoocreforged-wiki # Replace with your target repository
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./repoocreforged-wiki # The folder where the target repo will be checked out
+
+      # Step 3: Copy the file from source to target
+      - name: Copy File to Target Repository
+        run: |
+          cp CHANGELOG.md repoocreforged-wiki/src/changelogs/scrapsupport.md
+          cd repoocreforged-wiki
+          git status
+
+      # Step 4: Check for changes
+      - name: Check for Changes
+        run: |
+          cd repoocreforged-wiki
+          if git diff --quiet; then
+            echo "No changes detected. Exiting workflow."
+            exit 0
+          fi
+
+      # Step 5: Commit and push changes to target repository
+      - name: Commit and Push Changes
+        run: |
+          cd repoocreforged-wiki
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Update changelog file for Scrap Support on tag push: $GITHUB_REF"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
