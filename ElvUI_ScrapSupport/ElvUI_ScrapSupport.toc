@@ -1,9 +1,7 @@
-## Interface: 110007
-## Interface-Cata: 40401
-## Interface-Classic: 11505
+## Interface: 110007, 40401, 11505
 ## Title: |cff1784d1ElvUI|r |cff00FF98Scrap|r |cffA330C9Support|r
 ## Author: Repooc
-## Version: 1.6
+## Version: 1.7
 ## RequiredDeps: ElvUI, Scrap
 ## DefaultState: Enabled
 ## X-Curse-Project-ID: 1033962

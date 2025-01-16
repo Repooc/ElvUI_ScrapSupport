@@ -1,3 +1,3 @@
-v1.6 1/15/2025
+v1.7 1/15/2025
 
-• bump toc
+• adjust colors in Title
