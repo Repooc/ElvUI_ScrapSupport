@@ -1,17 +1,10 @@
 name: Copy Changelog to Website on Tag Push
 
 on:
-#   push:
-#     tags:
-#       - '*' # Trigger on any tag push
   workflow_dispatch:
   push:
-    paths:
-      - 'CHANGELOG.md'
-    branches:
-      - "main"
     tags:
-      - "!**"
+      - '*'
 
 jobs:
   copy-file:
