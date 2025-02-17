@@ -34,6 +34,8 @@ local function UpdateAll()
 		end
 
 		local numSlots = frame.numSlots
+		if not numSlots then return end
+		if type(numSlots) == 'string' then numSlots = tonumber(numSlots) end
 		for i = 1, numSlots do
 			local slot = _G['ElvUI_ContainerFrameBag'..k..'Slot'..i]
 			if not slot then return end
