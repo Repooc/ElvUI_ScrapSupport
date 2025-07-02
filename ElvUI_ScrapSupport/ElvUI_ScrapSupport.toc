@@ -1,7 +1,7 @@
-## Interface: 110107, 40402, 11507
+## Interface: 110107, 50500, 11507
 ## Title: |cff1784d1ElvUI|r |cff00FF98Scrap|r |cffA330C9Support|r
 ## Author: Repooc
-## Version: 1.8.1
+## Version: 2.0
 ## RequiredDeps: ElvUI, Scrap
 ## DefaultState: Enabled
 ## X-Curse-Project-ID: 1033962
